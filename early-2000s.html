@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early 2000s: The Dot-Com Boom & Bust</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <style>
+        .early-2000s {
+            background: linear-gradient(to bottom, #E0E0E0, #C0C0C0);
+            color: #333333;
+            font-family: "Verdana", Arial, sans-serif;
+            border: 1px solid #999999;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .early-2000s h3 {
+            color: #0066CC;
+            font-size: 2em;
+            text-align: center;
+            border-bottom: 2px solid #99CCFF;
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+            text-transform: none;
+            font-family: "Tahoma", Geneva, sans-serif;
+            text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+        }
+
+        .early-2000s .elements-grid,
+        .early-2000s .sites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 35px;
+        }
+
+        .element, .demo-site {
+            background: linear-gradient(to bottom, #FFFFFF, #EEEEEE);
+            color: #333333;
+            border: 1px solid #CCCCCC;
+            border-radius: 6px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .element, .demo-site {
+                width: 100%;
+            }
+        }
+
+        .early-2000s h4 {
+            color: #CC3300;
+            font-family: "Georgia", serif;
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-shadow: none;
+        }
+
+        .early-2000s p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .early-2000s a {
+            color: #0066CC;
+            text-decoration: none;
+            font-weight: normal;
+            display: inline-block;
+            padding: 5px 10px;
+            background: linear-gradient(to bottom, #DDF0FF, #AACCFF);
+            border: 1px solid #0066CC;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .early-2000s a:hover {
+            color: #FFFFFF;
+            background: linear-gradient(to bottom, #0066CC, #003399);
+            text-decoration: none;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+
+        .early-2000s .demo-site img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #BBBBBB;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .live-demo.early-2000s-live {
+            background: linear-gradient(to top, #F8F8F8, #FFFFFF);
+            color: #444444;
+            border: 1px solid #BBBBBB;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 550px;
+            text-align: center;
+            font-size: 0.95em;
+            font-family: Arial, sans-serif;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .live-demo.early-2000s-live h5 {
+            color: #660099;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .live-element {
+            background: linear-gradient(to bottom, #EFEFEF, #DDDDDD);
+            border: 1px solid #AAAAAA;
+            border-radius: 7px;
+            padding: 15px;
+            margin: 0 auto;
+            width: 95%;
+            max-width: 450px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .live-element h6 {
+            color: #333333;
+            font-size: 1.1em;
+            margin: 0;
+            text-shadow: 1px 1px #FFF;
+        }
+
+        .live-element.glossy-button-container a {
+            padding: 8px 20px;
+            font-size: 1.1em;
+            border-width: 2px;
+            border-color: #0044BB;
+            background: linear-gradient(to bottom, #99CCFF, #6699FF);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            font-weight: bold;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+        }
+
+        .live-element.glossy-button-container a:hover {
+            background: linear-gradient(to bottom, #6699FF, #3366CC);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+        }
+
+        .live-element.navigation-bar {
+            background: linear-gradient(to bottom, #EEEEEE, #CCCCCC);
+            border: 1px solid #999999;
+            border-radius: 5px;
+            padding: 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+            width: 95%;
+            max-width: 450px;
+        }
+
+        .live-element.navigation-bar a {
+            background: none;
+            border: none;
+            color: #003366;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.2s, color 0.2s;
+            font-weight: bold;
+        }
+
+        .live-element.navigation-bar a:hover {
+            background-color: #0066CC;
+            color: white;
+        }
+
+        .live-element.flash-placeholder {
+            background-color: #DDDDDD;
+            border: 1px dashed #AAAAAA;
+            padding: 20px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #666666;
+        }
+
+        .live-element img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Web's Wardrobe: A Journey Through Design Eras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="1990s.html">1990s</a></li>
+                <li><a href="early-2000s.html" class="active">Early 2000s</a></li>
+                <li><a href="mid-late-2000s.html">Mid-Late 2000s</a></li>
+                <li><a href="early-2010s.html">Early 2010s</a></li>
+                <li><a href="mid-late-2010s.html">Mid-Late 2010s</a></li>
+                <li><a href="404.html">2020s & Beyond</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="era-intro">
+            <h2>Early 2000s: The Dot-Com Boom & Bust(c.2000-2004)</h2>
+            <p>The early 2000s saw the web mature rapidly, moving beyond basic HTML towards more dynamic and visually rich experiences. The dot-com bubble's burst also led to a focus on usability and cleaner interfaces.</p>
+            <p><strong>Key Characteristics:</strong> Table layouts, web-safe colors, animated GIFs, hit counters, and often a very "busy" look.</p>
+        </section>
+
+        <div class="era-demo early-2000s">
+            <h3>Defining Design Elements (Early 2000s Style)</h3>
+            <div class="elements-grid">
+                <div class="element">
+                    <h4>Layouts</h4>
+                    <p>Transition from <strong>tables to CSS-based layouts</strong>, but tables still widely used. Fixed-width, centered designs common. Emphasis on clear content areas.</p>
+                </div>
+                <div class="element">
+                    <h4>Color Palettes</h4>
+                    <p>Moving beyond web-safe colors. <strong>Subtle gradients, softer shades</strong>, and more coordinated schemes. Blues, grays, and whites were popular.</p>
+                </div>
+                <div class="element">
+                    <h4>Imagery & Graphics</h4>
+                    <p><strong>Glossy buttons, reflective surfaces, bevels, and drop shadows</strong> were in vogue. Stock photography became standard. Early adoption of <strong>PNGs</strong> for transparency.</p>
+                </div>
+                <div class="element">
+                    <h4>Typography</h4>
+                    <p>Wider font choices like <strong>Verdana, Tahoma, and Georgia</strong>. <strong>Text shadows and subtle bevels</strong> were added for depth. Sans-serifs favored for readability.</p>
+                </div>
+                <div class="element">
+                    <h4>Interactive Elements</h4>
+                    <p><strong>Flash</strong> for entire sites, intros, games, and rich media. <strong>DHTML</strong> (Dynamic HTML) for interactive menus. <strong>Guestbooks, forums, and early blogging platforms</strong> were popular.</p>
+                </div>
+            </div>
+
+            <h3>Iconic Websites of the Era (Early 2000s Style)</h3>
+            <div class="sites-grid">
+                <div class="demo-site">
+                    <h4>Google (Early 2000s)</h4>
+                    <img src="images/Google.png" alt="Screenshot of Google homepage early 2000s">
+                    <a href="https://web.archive.org/web/20000815053036/http://www.google.com/" target="_blank" rel="noopener noreferrer">View on Wayback Machine</a>
+                </div>
+                <div class="demo-site">
+                    <h4>MySpace (2003)</h4>
+                    <img src="images/Myspace.png" alt="Screenshot of MySpace homepage 2003">
+                    <a href="https://web.archive.org/web/20030920032943/http://www.myspace.com/" target="_blank" rel="noopener noreferrer">View on Wayback Machine</a>
+                </div>
+                <div class="demo-site">
+                    <h4>Apple.com (Early 2000s)</h4>
+                    <img src="images/Apple.png" alt="Screenshot of Apple.com early 2000s">
+                    <a href="https://web.archive.org/web/20031201082046/http://www.apple.com/" target="_blank" rel="noopener noreferrer">View on Wayback Machine</a>
+                </div>
+            </div>
+
+            <div class="live-demo early-2000s-live">
+                <h5>A Live Early 2000s Style Snippet</h5>
+
+			  	   <div class="live-element navigation-bar">
+                    <h6>Simple Nav Bar</h6>
+                    <a>Home</a>
+                    <a>About</a>
+                    <a>Contact</a>
+            	   </div>
+
+					<div class="live-element">
+                    <h6>Search Input Example</h6>
+                    <input type="text" placeholder="Search..." style="padding: 8px; border: 1px solid #AAAAAA; border-radius: 5px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); width: 80%; max-width: 300px;">
+                    <button style="padding: 8px 15px; border: 1px solid #0066CC; background: linear-gradient(to bottom, #99CCFF, #6699FF); color: white; border-radius: 5px; cursor: pointer; box-shadow: 0 2px 3px rgba(0,0,0,0.2);">Go</button>
+                </div>
+
+                <div class="live-element">
+                    <h6>Example Text Box</h6>
+                    <p style="font-family: 'Times New Roman', serif; color: #555555; text-shadow: 1px 1px 0px rgba(255,255,255,0.5);">This text demonstrates typical font and slight shadow of the era.</p>
+                </div>
+
+                <div class="live-element glossy-button-container">
+                    <h6>Glossy Button</h6>
+                    <a>Click for Info!</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>The Evolution of Web Design.</p>
+    </footer>
+</body>
+</html>

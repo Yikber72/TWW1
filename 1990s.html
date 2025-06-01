@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1990s: The Wild West of the Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <style>
+        .nineties {
+            background-color: #000080;
+            color: #FFFF00;
+            font-family: "Times New Roman", serif;
+            border: 3px dashed #FF00FF;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .nineties h3 {
+            color: #00FF00;
+            font-size: 2.2em;
+            text-align: center;
+            border-bottom: 1px dotted #FFFF00;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+
+        .nineties .elements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .element,.demo-site {
+            background-color: #C0C0C0;
+            color: #000000;
+            border: 2px outset #FFFFFF;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .element,.demo-site {
+                width: 100%;
+            }
+        }
+
+        .nineties h4 {
+            color: #800080;
+            font-family: "Verdana", sans-serif;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px #FFF;
+        }
+
+        .nineties p {
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .nineties a {
+            color: #0000FF;
+            text-decoration: underline;
+            font-weight: bold;
+            display: inline-block;
+            padding: 2px 5px;
+            background-color: #ADD8E6;
+            border: 1px solid #0000FF;
+            transition: background-color 0.2s;
+        }
+
+        .nineties a:hover {
+            color: #FF0000;
+            background-color: #FFC0CB;
+        }
+
+        .sites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .nineties .demo-site img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .nineties-live {
+            background-color: #FFFFFF;
+            color: #333333;
+            border: 1px solid #000000;
+            padding: 15px;
+            margin: 25px auto;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            font-size: 0.9em;
+            font-family: monospace;
+            box-shadow: 3px 3px 0px #888;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nineties-live h5 {
+            color: #800000;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+            font-size: 1.1em;
+            text-transform: capitalize;
+        }
+
+        .live-element {
+            background-color: #F0F0F0;
+            border: 1px solid #999;
+            padding: 10px;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 2px 2px 0px #AAA;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .animated-gif {
+            padding: 5px;
+            background-color: #DDEEFF;
+        }
+
+        .marquee-box {
+            padding: 8px;
+            background-color: #EEFFEE;
+            overflow: hidden; /* Ensures marquee content stays within its box */
+        }
+
+        .nineties-live p {
+            margin-bottom: 5px;
+        }
+        .nineties-live img {
+            display: block;
+            margin: 10px auto;
+            border: none;
+        }
+
+        .nineties-live table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: #FFFFCC;
+        }
+        .nineties-live table td {
+            padding: 5px;
+            border: 1px solid #000;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>The Web's Wardrobe: A Journey Through Design Eras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="1990s.html" class="active">1990s</a></li>
+                <li><a href="early-2000s.html">Early 2000s</a></li>
+                <li><a href="mid-late-2000s.html">Mid-Late 2000s</a></li>
+                <li><a href="early-2010s.html">Early 2010s</a></li>
+                <li><a href="mid-late-2010s.html">Mid-Late 2010s</a></li>
+                <li><a href="404.html">2020s & Beyond</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>1990s: The Wild West of the Web (c. 1990-1999)</h2>
+
+            <p>The 1990s marked the commercial birth of the internet, a period of raw experimentation and rapid growth. Websites were often functional first, with aesthetics taking a backseat due to technological limitations and slow dial-up connections.</p>
+            <p><strong>Key Characteristics:</strong> Table layouts, web-safe colors, animated GIFs, hit counters, and often a very "busy" look.</p>
+        </section>
+
+        <div class="nineties">
+            <h3>Defining Design Elements (90s Style)</h3>
+
+            <div class="elements-grid">
+                <div class="element">
+                    <h4>Layouts</h4>
+                    <p>Primarily <strong>table-based</strong> for structuring content. Often fixed-width and centered. <strong>Framesets</strong> were common for persistent navigation.</p>
+                </div>
+
+                <div class="element">
+                    <h4>Color Palettes</h4>
+                    <p>Dominated by <em>web-safe colors</em> (216 specific colors). Often bright, clashing, and sometimes jarring combinations.</p>
+                </div>
+
+                <div class="element">
+                    <h4>Imagery & Graphics</h4>
+                    <p><strong>Low-resolution GIFs and JPEGs. Animated GIFs</strong> were extremely popular. Tiled background images were common.</p>
+                </div>
+
+                <div class="element">
+                    <h4>Typography</h4>
+                    <p>Default browser fonts like <strong>Times New Roman and Arial</strong> were prevalent. Text was often styled using the &lt;FONT> tag.</p>
+                </div>
+
+                <div class="element">
+                    <h4>Interactive Elements</h4>
+                    <p><b>HTML forms, image maps, &lt;marquee> tags for scrolling text, hit counters, and rudimentary JavaScript</b>.</p>
+                </div>
+            </div>
+
+            <h3>Iconic Websites of the Era (90s Style)</h3>
+            <div class="sites-grid">
+
+                <div class="demo-site">
+                    <h4>Space Jam (1996)</h4>
+                    <img src="images/SpaceJam.png" alt="Screenshot of Space Jam website 1996">
+                    <a href="https://www.spacejam.com/1996/" target="_blank" rel="noopener noreferrer">View website</a>
+                </div>
+
+                <div class="demo-site">
+                    <h4>AltaVista (1995)</h4>
+                    <img src="images/AltaVista.png" alt="Screenshot of AltaVista website 1995">
+                    <a href="https://web.archive.org/web/19961022174810/http://www.altavista.com/" target="_blank" rel="noopener noreferrer">View on Wayback Machine</a>
+                </div>
+
+                <div class="demo-site">
+                    <h4>Zombo.com (1999)</h4>
+                    <img src="images/ZOMBO.png" alt="Screenshot of Zombo.com website 1999">
+                    <a href="https://zombo.com/" target="_blank" rel="noopener noreferrer">View on Wayback Machine</a>
+                </div>
+            </div>
+
+            <div class="nineties-live">
+                <h5>A Live 90s Style Snippet</h5>
+
+                <div class="live-element">
+                    <h6>Classic Web Text</h6>
+                    <p>Welcome to my <span style="font-family: 'Comic Sans MS', cursive; color: #FF00FF;">awesome</span> website!</p>
+                    <a href="#">Click Here for More Info!</a>
+                </div>
+
+                <div class="live-element animated-gif">
+                    <h6>Animated GIF</h6>
+                    <img src="images/Gif.gif" alt="Animated GIF sample" width="50" height="50">
+                </div>
+
+                <div class="live-element">
+                    <h6>Table Layout Example</h6>
+                    <table border="1" style="width: 80%; border-collapse: collapse; margin: 0 auto; background-color: #FFFFCC;">
+                        <tr><td align="center" bgcolor="#CCCCCC">CELL 1</td><td align="center">CELL 2</td></tr>
+                        <tr><td align="center">CELL 3</td><td align="center" bgcolor="#FFFF00">CELL 4</td></tr>
+                    </table>
+                </div>
+
+                <div class="marquee-box">
+                    <h6>Scrolling Marquee</h6>
+                    <marquee direction="left" scrollamount="3">This is a scrolling text marquee!</marquee>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>2025 The Evolution of Web Design.</p>
+    </footer>
+</body>
+</html>
